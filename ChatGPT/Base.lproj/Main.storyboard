@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChatGPT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHL-Vw-umx">
+                                <rect key="frame" x="0.0" y="744" width="390" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srS-pr-s6M">
+                                        <rect key="frame" x="30" y="25" width="290" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6rJ-Z4-Tao"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m66-Pl-OFZ">
+                                        <rect key="frame" x="330" y="25" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2Jy-Q6-aar"/>
+                                            <constraint firstAttribute="width" constant="50" id="R0I-5X-Wup"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="chatgpt_Icon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="m66-Pl-OFZ" firstAttribute="top" secondItem="srS-pr-s6M" secondAttribute="top" id="1rq-lE-xGF"/>
+                                    <constraint firstItem="m66-Pl-OFZ" firstAttribute="leading" secondItem="srS-pr-s6M" secondAttribute="trailing" constant="10" id="6An-aF-uoi"/>
+                                    <constraint firstAttribute="height" constant="100" id="CW8-9F-h8w"/>
+                                    <constraint firstAttribute="trailing" secondItem="m66-Pl-OFZ" secondAttribute="trailing" constant="10" id="Nfh-YX-Q4z"/>
+                                    <constraint firstItem="srS-pr-s6M" firstAttribute="leading" secondItem="gHL-Vw-umx" secondAttribute="leading" constant="30" id="Vnd-Fv-30C"/>
+                                    <constraint firstItem="m66-Pl-OFZ" firstAttribute="bottom" secondItem="srS-pr-s6M" secondAttribute="bottom" id="lIa-FJ-ode"/>
+                                    <constraint firstItem="srS-pr-s6M" firstAttribute="centerY" secondItem="gHL-Vw-umx" secondAttribute="centerY" id="rd8-dw-ICX"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="x4T-A5-N1v">
+                                <rect key="frame" x="0.0" y="47" width="390" height="697"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gHL-Vw-umx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="774-nd-7Z4"/>
+                            <constraint firstItem="gHL-Vw-umx" firstAttribute="top" secondItem="x4T-A5-N1v" secondAttribute="bottom" id="F79-Yu-ULF"/>
+                            <constraint firstItem="x4T-A5-N1v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FIn-c3-dg4"/>
+                            <constraint firstAttribute="bottom" secondItem="gHL-Vw-umx" secondAttribute="bottom" id="HCk-4X-LuW"/>
+                            <constraint firstItem="x4T-A5-N1v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lFG-am-SXU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x4T-A5-N1v" secondAttribute="trailing" id="n9M-ez-moZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gHL-Vw-umx" secondAttribute="trailing" id="xcx-f6-ybD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageSendButton" destination="m66-Pl-OFZ" id="Onj-bq-bPS"/>
+                        <outlet property="messageTextField" destination="srS-pr-s6M" id="wnd-0K-iuy"/>
+                        <outlet property="messagesTableView" destination="x4T-A5-N1v" id="i1v-Oi-fXu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chatgpt_Icon" width="960" height="960"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
