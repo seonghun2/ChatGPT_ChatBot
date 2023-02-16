@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE61A827299DF9920051A1BF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61A826299DF9920051A1BF /* MessageCell.swift */; };
+		CE61A82A299DF9B70051A1BF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE61A829299DF9B70051A1BF /* SnapKit */; };
+		CE61A82D299E030C0051A1BF /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE61A82C299E030C0051A1BF /* RxAlamofire */; };
+		CE61A82F299E06C40051A1BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61A82E299E06C40051A1BF /* Router.swift */; };
 		CEE483F7299CAA6100018E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE483F6299CAA6100018E93 /* AppDelegate.swift */; };
 		CEE483F9299CAA6100018E93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE483F8299CAA6100018E93 /* SceneDelegate.swift */; };
 		CEE483FB299CAA6100018E93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE483FA299CAA6100018E93 /* ViewController.swift */; };
@@ -17,12 +21,14 @@
 		CEE4840E299CBF6000018E93 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CEE4840D299CBF6000018E93 /* RxRelay */; };
 		CEE48410299CBF6000018E93 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEE4840F299CBF6000018E93 /* RxSwift */; };
 		CEE48413299CBF7100018E93 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEE48412299CBF7100018E93 /* Alamofire */; };
-		CEE48415299CC33000018E93 /* GPTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48414299CC33000018E93 /* GPTResponse.swift */; };
-		CEE48417299CC4F900018E93 /* GPTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48416299CC4F900018E93 /* GPTManager.swift */; };
-		CEE48419299CC57300018E93 /* GPT_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48418299CC57300018E93 /* GPT_API.swift */; };
+		CEE48415299CC33000018E93 /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48414299CC33000018E93 /* MessageResponse.swift */; };
+		CEE48417299CC4F900018E93 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48416299CC4F900018E93 /* ChatManager.swift */; };
+		CEE48419299CC57300018E93 /* ChatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48418299CC57300018E93 /* ChatAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE61A826299DF9920051A1BF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		CE61A82E299E06C40051A1BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CEE483F3299CAA6100018E93 /* ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE483F6299CAA6100018E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE483F8299CAA6100018E93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +37,9 @@
 		CEE483FF299CAA6300018E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE48402299CAA6300018E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE48404299CAA6300018E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEE48414299CC33000018E93 /* GPTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTResponse.swift; sourceTree = "<group>"; };
-		CEE48416299CC4F900018E93 /* GPTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTManager.swift; sourceTree = "<group>"; };
-		CEE48418299CC57300018E93 /* GPT_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_API.swift; sourceTree = "<group>"; };
+		CEE48414299CC33000018E93 /* MessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageResponse.swift; sourceTree = "<group>"; };
+		CEE48416299CC4F900018E93 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		CEE48418299CC57300018E93 /* ChatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,9 @@
 				CEE48410299CBF6000018E93 /* RxSwift in Frameworks */,
 				CEE48413299CBF7100018E93 /* Alamofire in Frameworks */,
 				CEE4840E299CBF6000018E93 /* RxRelay in Frameworks */,
+				CE61A82D299E030C0051A1BF /* RxAlamofire in Frameworks */,
 				CEE4840C299CBF6000018E93 /* RxCocoa in Frameworks */,
+				CE61A82A299DF9B70051A1BF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,13 +81,15 @@
 				CEE483F6299CAA6100018E93 /* AppDelegate.swift */,
 				CEE483F8299CAA6100018E93 /* SceneDelegate.swift */,
 				CEE483FA299CAA6100018E93 /* ViewController.swift */,
-				CEE48416299CC4F900018E93 /* GPTManager.swift */,
 				CEE483FC299CAA6100018E93 /* Main.storyboard */,
 				CEE483FF299CAA6300018E93 /* Assets.xcassets */,
 				CEE48401299CAA6300018E93 /* LaunchScreen.storyboard */,
 				CEE48404299CAA6300018E93 /* Info.plist */,
-				CEE48414299CC33000018E93 /* GPTResponse.swift */,
-				CEE48418299CC57300018E93 /* GPT_API.swift */,
+				CEE48414299CC33000018E93 /* MessageResponse.swift */,
+				CEE48418299CC57300018E93 /* ChatAPI.swift */,
+				CEE48416299CC4F900018E93 /* ChatManager.swift */,
+				CE61A826299DF9920051A1BF /* MessageCell.swift */,
+				CE61A82E299E06C40051A1BF /* Router.swift */,
 			);
 			path = ChatGPT;
 			sourceTree = "<group>";
@@ -105,6 +115,8 @@
 				CEE4840D299CBF6000018E93 /* RxRelay */,
 				CEE4840F299CBF6000018E93 /* RxSwift */,
 				CEE48412299CBF7100018E93 /* Alamofire */,
+				CE61A829299DF9B70051A1BF /* SnapKit */,
+				CE61A82C299E030C0051A1BF /* RxAlamofire */,
 			);
 			productName = ChatGPT;
 			productReference = CEE483F3299CAA6100018E93 /* ChatGPT.app */;
@@ -137,6 +149,8 @@
 			packageReferences = (
 				CEE4840A299CBF6000018E93 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				CEE48411299CBF7100018E93 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE61A828299DF9B70051A1BF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CE61A82B299E030C0051A1BF /* XCRemoteSwiftPackageReference "RxAlamofire" */,
 			);
 			productRefGroup = CEE483F4299CAA6100018E93 /* Products */;
 			projectDirPath = "";
@@ -165,12 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE48419299CC57300018E93 /* GPT_API.swift in Sources */,
+				CE61A82F299E06C40051A1BF /* Router.swift in Sources */,
+				CEE48419299CC57300018E93 /* ChatAPI.swift in Sources */,
 				CEE483FB299CAA6100018E93 /* ViewController.swift in Sources */,
 				CEE483F7299CAA6100018E93 /* AppDelegate.swift in Sources */,
-				CEE48415299CC33000018E93 /* GPTResponse.swift in Sources */,
-				CEE48417299CC4F900018E93 /* GPTManager.swift in Sources */,
+				CEE48415299CC33000018E93 /* MessageResponse.swift in Sources */,
+				CEE48417299CC4F900018E93 /* ChatManager.swift in Sources */,
 				CEE483F9299CAA6100018E93 /* SceneDelegate.swift in Sources */,
+				CE61A827299DF9920051A1BF /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +406,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE61A828299DF9B70051A1BF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		CE61A82B299E030C0051A1BF /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		CEE4840A299CBF6000018E93 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -409,6 +441,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE61A829299DF9B70051A1BF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE61A828299DF9B70051A1BF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CE61A82C299E030C0051A1BF /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE61A82B299E030C0051A1BF /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
 		CEE4840B299CBF6000018E93 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEE4840A299CBF6000018E93 /* XCRemoteSwiftPackageReference "RxSwift" */;

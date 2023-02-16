@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - GPTResponse
-struct GPTResponse: Codable {
+struct MessageResponse: Codable {
     let id, object: String?
     let created: Int?
     let model: String?
